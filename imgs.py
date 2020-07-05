@@ -79,7 +79,7 @@ async def poke(ctx):
 @bot.command()
 async def pout(ctx):
 
-@bot.command()
+@bot.command(aliases=['f', 'rip'])
 async def respect(ctx):
 
 @bot.command()
