@@ -52,8 +52,8 @@ async def laugh(ctx):
 @bot.command()
 async def lolihug(ctx):
 
-@bot.command()
-async def meme(ctx):
+#@bot.command() - custom images
+#async def meme(ctx):
 
 @bot.command(aliases=['confused', 'what'])
 async def nani(ctx):
@@ -88,8 +88,8 @@ async def scared(ctx):
 @bot.command()
 async def share(ctx):
 
-@bot.command()
-async def ship(ctx):
+#@bot.command() - custom images
+#async def ship(ctx):
 
 @bot.command()
 async def shrug(ctx):
@@ -97,7 +97,7 @@ async def shrug(ctx):
 @bot.command()
 async def sip(ctx):
 
-@bot.command()
+@bot.command(aliases=['spank'])
 async def smack(ctx):
 
 @bot.command()
