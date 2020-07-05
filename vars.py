@@ -18,3 +18,222 @@ EmbedColours = [
     0xE58333,
     0xFF33CC,
 ]
+
+BlushImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/697262785666482246/21.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697264305737039932/10.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/704547236520132689/11.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728110189936640050/12.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/726533952684425276/13.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697264300481577030/14.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/628643811802873876/15.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/714193794387673128/16.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/677990320771694675/17.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/657120246158721044/18.gif",
+    "https://cdn.discordapp.com/attachments/533360771585802242/692494885839962212/19.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728110189936640050/12.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/657000724336476202/20.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697262785666482246/21.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/714512047571861635/22.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/719265040594894878/23.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728423701619408976/24.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/700777704714141758/25.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/677990693251055637/26.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/705854619192131634/27.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/711489056785301554/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697264300481577030/14.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/628643811802873876/15.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/677990693251055637/26.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/705854619192131634/27.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/712391462804783155/8.gif",
+    "https://cdn.discordapp.com/attachments/533360771585802242/692494885839962212/19.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/657109653234384897/c1.gif",
+]
+BoredImgs = [ ]
+ComplimentImgs = [ ]
+CryImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729414935972413520/image0.gif",
+] 
+CuddleImgs = [
+    "https://cdn.discordapp.com/attachments/398171202306310164/610125802159472670/1.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/609457347970072589/10.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/656628714993483786/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/644727923118440479/3.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/613831241233334343/4.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/679756211171622979/5.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/723014165970812998/6.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913941157871616/7.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/687716108731416715/8.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/681967076591665168/9.gif",
+]
+CuteImgs
+DabImgs
+DanceImgs
+ExcitedImgs
+GoodmorningImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729415088884285460/image0.gif",
+]
+HandshakeImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/676128415958564946/1.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/684265473604714496/10.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/612602697409101824/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/608789174803234816/3.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/686261573400133719/4.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/684836753495818240/5.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/678501931458494464/6.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/681679659129503978/7.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/684025377252966404/8.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/612602645630287874/9.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/684111230348296320/top.gif"
+]
+HideImgs
+HighfiveImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729415784656535631/image0.gif",
+]
+HoldhandsImgs
+HugImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/697267657711419402/1.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728422215560855672/10.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703680365117833287/11.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610987290919174147/12.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/687715750185533560/13.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697914384609050725/14.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709557652845232279/15.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/632296826514702368/16.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/682116637230759991/17.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709542505812721714/18.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709249537197342730/19.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709496048007249961/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/679755917436387421/20.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/634867279506571294/21.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709249217687715880/22.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728317639671152780/23.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/711495142225477672/24.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/708193562533167134/25.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/693921777566613514/26.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/697008431923724288/27.gif",
+    "https://cdn.discordapp.com/attachments/533360771585802242/725763427414573106/28.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/728707650182971452/29.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/723014843061501982/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697914384609050725/14.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709557652845232279/15.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/693921777566613514/26.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/682116637230759991/17.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709542505812721714/18.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709249537197342730/19.gif"
+]
+KissImgs = [
+    "https://cdn.discordapp.com/attachments/398171202306310164/690257907429671057/1.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/690002748829204497/10.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/683072713908289611/11.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/714716853204680734/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/693882201921552394/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/689530060109250607/4.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/693885131852742666/5.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/689493153136640239/6.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/676131618905128993/7.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/687713410821128298/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/681448399907979264/9.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/691346163827474472/lonely.gif",
+]
+LaughImgs
+LolihugImgs
+MemeImgs
+NaniImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729414806544580628/image0.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610282991922446360/11.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703431253273083944/10.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610282991922446360/11.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728787482660962334/12.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610283049355051010/13.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728481828360552468/14.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/618633478774325270/15.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703431612880257124/16.gif",
+    "https://cdn.discordapp.com/attachments/653076864482541569/723082447406759966/17.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/657133269783019560/18.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/608795401444786227/19.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/605128614735904806/2.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703431531212832788/20.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/715361030385172590/21.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610283049355051010/13.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610282967830495243/4.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/618633478774325270/15.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703431445569339493/6.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/612602834797461504/7.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/689318649374441504/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/608795401444786227/19.gif",
+]
+NiniImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729415255209541723/image0.gif",
+]
+NodImgs
+NomImgs
+PatImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/696262304131711046/11.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/629754654821187597/10.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/696262304131711046/11.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/722868175108046919/12.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/714922347433558067/13.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/705854426510000238/14.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/677648116715094065/15.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/722868175108046919/12.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/714922347433558067/13.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/705854426510000238/14.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/714929119502139472/5.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697265877942534252/6.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697264187822309386/7.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/689322583845634088/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/687861806080720896/9.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/729415827626917928/image0.gif",
+    #"https://cdn.discordapp.com/attachments/439593890505424896/697267559719764068/kanna1.gif"
+]
+PirateImgs
+PokeImgs = [ 
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913809569972314/1.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/644727036946153472/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/709253419747115088/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/629086241169735700/4.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913741991477268/5.gif",
+    #"https://cdn.discordapp.com/attachments/399008549491048448/684810004833763479/kanna1.gif" 
+]
+PoutImgs
+RespectImgs
+ScaredImgs
+ShareImgs
+ShipImgs
+ShrugImgs
+SipImgs
+SmackImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/697984859569651802/11.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/695301097291513866/10.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697984859569651802/11.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/690685438649696327/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/693921662382637168/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/723013656304156772/4.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/723013936353378394/5.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/610865524439777280/6.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697279430757843124/7.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/694413398108012594/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913581567737856/9.gif",
+]
+SmileImgs
+SmugImgs
+SpankImgs
+WastedImgs
+WaveImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/696571529823256576/1.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/713821471784566844/10.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/713821432508973177/11.gif",
+    "https://cdn.discordapp.com/attachments/398170736398696458/715318476624887838/12.gif",
+    "https://cdn.discordapp.com/attachments/653076864482541569/715651384506056837/13.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/715625736131707000/14.gif",
+    "https://cdn.discordapp.com/attachments/653076864482541569/728338890154442863/15.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/697146821947949097/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/713821523047219291/3.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/715625736131707000/14.gif",
+    "https://cdn.discordapp.com/attachments/653076864482541569/728338890154442863/15.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/725683236008624228/6.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/723529802774085772/7.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/728086748378169374/8.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/697146818332721242/9.gif",
+]
