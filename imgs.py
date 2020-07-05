@@ -55,7 +55,7 @@ async def lolihug(ctx):
 @bot.command()
 async def meme(ctx):
 
-@bot.command()
+@bot.command(aliases=['confused', 'what'])
 async def nani(ctx):
 
 @bot.command()

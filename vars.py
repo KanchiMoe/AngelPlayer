@@ -53,6 +53,16 @@ BoredImgs = [ ]
 ComplimentImgs = [ ]
 CryImgs = [
     "https://cdn.discordapp.com/attachments/398191639488757770/729414935972413520/image0.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/697543758849376399/1.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/691347350165127218/10.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697278535265550466/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697128451643146410/3.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/719920029407379456/4.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/697869027380560002/5.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697278120289501264/6.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/605127251087982667/7.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697275251775766548/8.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/684902273587216586/9.gif",
 ] 
 CuddleImgs = [
     "https://cdn.discordapp.com/attachments/398171202306310164/610125802159472670/1.gif",
@@ -67,8 +77,18 @@ CuddleImgs = [
     "https://cdn.discordapp.com/attachments/398191639488757770/681967076591665168/9.gif",
 ]
 CuteImgs
-DabImgs
-DanceImgs
+DabImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/659585280294256690/1.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/657001933734936605/5.gif",
+]
+DanceImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/628738704726294538/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913453821558804/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/716251181164396624/5.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/628738845403512843/6.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913490161008721/7.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/634403625635938304/c1.gif",
+]
 ExcitedImgs
 GoodmorningImgs = [
     "https://cdn.discordapp.com/attachments/398191639488757770/729415088884285460/image0.gif",
@@ -135,12 +155,33 @@ KissImgs = [
     "https://cdn.discordapp.com/attachments/439593890505424896/687713410821128298/8.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/681448399907979264/9.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/691346163827474472/lonely.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610987435412815900/general.gif",
+    "https://cdn.discordapp.com/attachments/399008549491048448/659666206726553600/lonely.gif",
 ]
 LaughImgs
-LolihugImgs
+LolihugImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/606070494051172362/1.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/610987791232401418/3.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/604940274275319840/4.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/694620941220577360/5.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/634481984218988547/7.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/605448703095865344/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/604661106543427599/9.gif",
+]
 MemeImgs
 NaniImgs = [
+    "https://cdn.discordapp.com/attachments/439593890505424896/697912653674184744/2.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/716048462919237632/3.gif",
+    "https://cdn.discordapp.com/attachments/653076864482541569/718477124742414346/4.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697913028318068766/5.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/703348357787287632/6.gif",
+    "https://cdn.discordapp.com/attachments/503488776052408320/717365098368204800/7.gif",
+    "https://cdn.discordapp.com/attachments/398171202306310164/629765527551737856/8.gif",
+    "https://cdn.discordapp.com/attachments/439593890505424896/697230851364093982/9.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/729414806544580628/image0.gif",
+]
+NiniImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/729415255209541723/image0.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/610282991922446360/11.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/703431253273083944/10.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/610282991922446360/11.gif",
@@ -162,9 +203,6 @@ NaniImgs = [
     "https://cdn.discordapp.com/attachments/398171202306310164/612602834797461504/7.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/689318649374441504/8.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/608795401444786227/19.gif",
-]
-NiniImgs = [
-    "https://cdn.discordapp.com/attachments/398191639488757770/729415255209541723/image0.gif",
 ]
 NodImgs
 NomImgs
