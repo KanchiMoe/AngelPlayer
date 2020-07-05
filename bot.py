@@ -1,4 +1,7 @@
+import discord
 from discord.ext import commands
+from bot import bot
+import imgs, vars
 bot = commands.Bot(command_prefix='++')
 
 @bot.command()
@@ -14,3 +17,7 @@ async def help(ctx):
 
 @bot.command(aliases=['source', 'code'])
 async def sourcecode(ctx):
+
+
+
+bot.run('xxx')
