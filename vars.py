@@ -77,6 +77,7 @@ BlushImgs = [ #todo, duplicate check
     "https://cdn.discordapp.com/attachments/398191639488757770/712391462804783155/8.gif",
     "https://cdn.discordapp.com/attachments/533360771585802242/692494885839962212/19.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/657109653234384897/c1.gif",
+    "https://cdn.weeb.sh/images/H10CD5Oub.jpeg",
 ]
 BoredImgs = [
     "https://cdn.discordapp.com/attachments/399008549491048448/721030246832406619/1.gif",
@@ -456,6 +457,8 @@ PatImgs = [ #todo duplicate check
     "https://cdn.discordapp.com/attachments/399008549491048448/604464392305901588/3.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/604350230581739530/5.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/604675136116883466/9.gif",
+    "https://cdn.weeb.sh/images/H10CD5Oub.jpeg",
+    "https://cdn.weeb.sh/images/ByBxP5du-.png",
 ]
 PirateImgs = [
     "https://cdn.discordapp.com/attachments/439593890505424896/720652499949977600/pirate.gif",
