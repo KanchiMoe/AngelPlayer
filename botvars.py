@@ -2,23 +2,6 @@
 This file contains static variables and tables for the bot
 '''
 
-EmbedColours = [
-    0xE610E3,
-    0x128A7B,
-    0xEEF6DD,
-    0xDEAE73,
-    0xB984E0,
-    0x0BBC51,
-    0x3F83D4,
-    0xAB34E3,
-    0x2C4293,
-    0x69DA78,
-    0x9CBFA6,
-    0x8CB72D,
-    0xE58333,
-    0xFF33CC,
-]
-
 BlushImgs = [ #todo, duplicate check
     "https://cdn.discordapp.com/attachments/439593890505424896/697262785666482246/21.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/697264305737039932/10.gif",
@@ -544,7 +527,7 @@ ShareImgs = [
     "https://cdn.discordapp.com/attachments/399008549491048448/700769471861882890/6.gif",
 ]
 # ShipImgs - custom images
-ShrugImgs
+ShrugImgs = [ ] # to go: get image, only did the text
 SipImgs = [
     "https://cdn.discordapp.com/attachments/398191639488757770/691888594788548638/1.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/688111560161624151/1.gif",
