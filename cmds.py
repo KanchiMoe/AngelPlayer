@@ -14,16 +14,16 @@ async def ping(ctx):
 @mybot.bot.command(aliases=['commands', 'command'])
 async def help2(ctx):
     embed=discord.Embed(title="Command list", description="**Here is a list of all the commands:**", color=0x2ECC71)
-    embed.add_field(name="Image commands:", value=f"{CmdPrefix}blush\n{CmdPrefix}bored\n{CmdPrefix}compliment\n{CmdPrefix}cry" \
-        f"\n{CmdPrefix}cuddle\n{CmdPrefix}cute\n{CmdPrefix}dab\n{CmdPrefix}dance\n{CmdPrefix}excited\n{CmdPrefix}goodmorning" \
-        f"\n{CmdPrefix}handshake\n{CmdPrefix}hide\n{CmdPrefix}highfive\n{CmdPrefix}holdhands\n{CmdPrefix}hug\n{CmdPrefix}kiss" \
-        f"\n{CmdPrefix}laugh\n{CmdPrefix}lolihug\n~~{CmdPrefix}meme~~\n{CmdPrefix}nani\n{CmdPrefix}nini\n{CmdPrefix}nod\n{CmdPrefix}nom" \
-        f"\n{CmdPrefix}pat\n{CmdPrefix}pirate\n{CmdPrefix}poke\n{CmdPrefix}pout\n{CmdPrefix}respect\n{CmdPrefix}scared\n{CmdPrefix}share" \
-        f"\n~~{CmdPrefix}ship~~\n{CmdPrefix}shrug\n{CmdPrefix}sip\n{CmdPrefix}smack\n{CmdPrefix}smile\n{CmdPrefix}smug\n" \
-        f"{CmdPrefix}wasted\n{CmdPrefix}wave", inline=True)
-    embed.add_field(name="Misc. commands", value=f"{CmdPrefix}help\n{CmdPrefix}sourcecode", inline=True)
+    embed.add_field(name="Image commands:", value=f"{mybot.CmdPrefix}blush\n{mybot.CmdPrefix}bored\n{mybot.CmdPrefix}compliment\n{mybot.CmdPrefix}cry" \
+        f"\n{mybot.CmdPrefix}cuddle\n{mybot.CmdPrefix}cute\n{mybot.CmdPrefix}dab\n{mybot.CmdPrefix}dance\n{mybot.CmdPrefix}excited\n{mybot.CmdPrefix}goodmorning" \
+        f"\n{mybot.CmdPrefix}handshake\n{mybot.CmdPrefix}hide\n{mybot.CmdPrefix}highfive\n{mybot.CmdPrefix}holdhands\n{mybot.CmdPrefix}hug\n{mybot.CmdPrefix}kiss" \
+        f"\n{mybot.CmdPrefix}laugh\n{mybot.CmdPrefix}lolihug\n~~{mybot.CmdPrefix}meme~~\n{mybot.CmdPrefix}nani\n{mybot.CmdPrefix}nini\n{mybot.CmdPrefix}nod\n{mybot.CmdPrefix}nom" \
+        f"\n{mybot.CmdPrefix}pat\n{mybot.CmdPrefix}pirate\n{mybot.CmdPrefix}poke\n{mybot.CmdPrefix}pout\n{mybot.CmdPrefix}respect\n{mybot.CmdPrefix}scared\n{mybot.CmdPrefix}share" \
+        f"\n~~{mybot.CmdPrefix}ship~~\n{mybot.CmdPrefix}shrug\n{mybot.CmdPrefix}sip\n{mybot.CmdPrefix}smack\n{mybot.CmdPrefix}smile\n{mybot.CmdPrefix}smug\n" \
+        f"{mybot.CmdPrefix}wasted\n{mybot.CmdPrefix}wave", inline=True)
+    embed.add_field(name="Misc. commands", value=f"{mybot.CmdPrefix}help\n{mybot.CmdPrefix}sourcecode", inline=True)
     await ctx.send(embed=embed)
- 
+
 @mybot.bot.command(aliases=['source', 'code'])
 async def sourcecode(ctx):
     embed=discord.Embed(title="The bot's source code", color=0x2ECC71,
