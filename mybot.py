@@ -8,4 +8,4 @@ from discord.ext import commands
 bot = commands.Bot(command_prefix='++')
 CmdPrefix = bot.command_prefix
 LOGGER = logging.getLogger('AngelPlayer')
-LOGGER.setLevel('INFO')
+LOGGER.setLevel(logging.INFO)
