@@ -1,0 +1,7 @@
+version: '3.2'
+services:
+  angel-player:
+    image: "${IMAGE_TAG}"
+    command: python main.py
+    environment:
+      - TOKEN
