@@ -166,6 +166,12 @@ async def nini(ctx):
     embed=EmbedMaker(ReqImg)
     await ctx.send(embed=embed)
 
+@mybot.bot.command(aliases=['stare'])
+async def glare(ctx):
+    ReqImg = "glare"
+    embed=EmbedMaker(ReqImg)
+    await ctx.send(embed=embed)
+
 @mybot.bot.command()
 async def nod(ctx):
     ReqImg = "Nod"

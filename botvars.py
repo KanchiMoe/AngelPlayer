@@ -615,3 +615,10 @@ WaveImgs = [
     "https://cdn.discordapp.com/attachments/399008549491048448/728086748378169374/8.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/697146818332721242/9.gif",
 ]
+
+GlareImgs = [
+    "https://cdn.discordapp.com/attachments/398191639488757770/732429670867271811/image0.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/732429698843541634/image0.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/732429748495712266/image0.gif",
+    "https://cdn.discordapp.com/attachments/398191639488757770/732429826329280562/image0.gif",
+]
