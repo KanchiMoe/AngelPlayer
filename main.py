@@ -3,5 +3,11 @@ import os
 import mybot
 import cmds
 
-# Replace this with your bot's token.
+async def logger(cxt):
+    '''Logs who did what'''
+    mybot.LOGGER.info('%s ran command %s with args %s',
+                      '{}:{}'.format(cxt.message.author.name, cxt.message.author.discriminator),
+                      cxt.command, cxt.args)
+
+mybot.bot.before_invoke(logger)
 mybot.bot.run(os.environ['TOKEN'])
