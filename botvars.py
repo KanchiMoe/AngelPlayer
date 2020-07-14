@@ -71,7 +71,7 @@ BoredImgs = [
     "https://cdn.discordapp.com/attachments/399008549491048448/694088774526828564/3.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/694088160941965363/5.gif",
 ]
-ComplimentImgs = [ ]
+ComplimentImgs = []
 CryImgs = [ # TODO: check for duplicates
     "https://cdn.discordapp.com/attachments/398191639488757770/729414935972413520/image0.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/697543758849376399/1.gif",
@@ -94,7 +94,7 @@ CryImgs = [ # TODO: check for duplicates
     "https://cdn.discordapp.com/attachments/399008549491048448/680768940632178708/7.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/605030678953984000/8.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/681524925110157349/9.gif",
-] 
+]
 CuddleImgs = [
     "https://cdn.discordapp.com/attachments/398171202306310164/610125802159472670/1.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/609457347970072589/10.gif",
@@ -106,8 +106,12 @@ CuddleImgs = [
     "https://cdn.discordapp.com/attachments/439593890505424896/697913941157871616/7.gif",
     "https://cdn.discordapp.com/attachments/439593890505424896/687716108731416715/8.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/681967076591665168/9.gif",
-    #https://cdn.discordapp.com/attachments/653076864482541569/677276699116961792/alone.gif - used when the user doesn't state who to cuddle
 ]
+
+CuddleAloneImgs = [
+    'https://cdn.discordapp.com/attachments/653076864482541569/677276699116961792/alone.gif'
+]
+
 CuteImgs = [ #todo duplicate check
     "https://cdn.discordapp.com/attachments/399008549491048448/717835947202314290/11.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/632998774414770189/10.gif",

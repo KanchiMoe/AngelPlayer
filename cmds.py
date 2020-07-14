@@ -2,10 +2,10 @@
 This file contains all of the commands the bot has.
 '''
 
-import mybot, botvars
 import random
 import discord
-from discord.ext import commands
+import mybot
+import botvars
 
 @mybot.bot.command()
 async def ping(ctx):
@@ -26,13 +26,13 @@ async def help2(ctx):
 
 @mybot.bot.command(aliases=['source', 'code'])
 async def sourcecode(ctx):
-    embed=discord.Embed(title="The bot's source code", color=0x2ECC71,
-                        description="The source code for this bot is open source and is available on Github.")
+    embed = discord.Embed(title="The bot's source code", color=0x2ECC71,
+                          description="The source code for this bot is open source and is available on Github.\nhttps://github.com/ChiyoOsaka/AngelPlayer")
     await ctx.send(embed=embed)
- 
-@mybot.bot.command(aliases=['bug', 'bugs', 'suggest'])
-async def suggestions(ctx):
-    pass
+
+#@mybot.bot.command(aliases=['bug', 'bugs', 'suggest'])
+#async def suggestions(ctx):
+#    pass
 
 def EmbedMaker(ReqImg):
     ImgListName = "%sImgs" % ReqImg
