@@ -145,6 +145,7 @@ DabImgs = [ # ヽ( •_)ᕗ
     "https://cdn.discordapp.com/attachments/398191639488757770/657001933734936605/5.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/695945131811012618/6.gif",
     "https://cdn.discordapp.com/attachments/399008549491048448/643488526142406656/7.gif",
+    "https://media1.tenor.com/images/93b9912dfd89a405081fbb77587e9133/tenor.gif?itemid=13410264",
 ]
 DanceImgs = [ #todo duplicate
     "https://cdn.discordapp.com/attachments/439593890505424896/628738704726294538/2.gif",
