@@ -10,7 +10,7 @@ from discord.ext import commands
 @mybot.bot.command()
 async def ping(ctx):
     await ctx.send(':stopwatch: Pong!')
- 
+
 @mybot.bot.command(aliases=['commands', 'command'])
 async def help2(ctx):
     embed=discord.Embed(title="Command list", description="**Here is a list of all the commands:**", color=0x2ECC71)

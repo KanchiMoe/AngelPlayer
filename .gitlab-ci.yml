@@ -1,0 +1,63 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+  IMAGE_TAG_SHA: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+  DOCKER_DRIVER: overlay2
+
+pylint:
+  stage: test
+  image: docker:latest
+  script:
+    - mkdir pylint
+    - docker build --build-arg IMAGE="$IMAGE_TAG_SHA" --iidfile=pylint.id -f Dockerfile.pylint .
+    - id=$(docker create $(cat pylint.id))
+    - docker cp $id:/script/pylint/pylint.svg pylint/
+    - docker rm -v $id
+  artifacts:
+    name: pylint
+    paths:
+      - pylint/pylint.svg
+
+build-not-master:
+  stage: build
+  image: docker:latest
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker build -f Dockerfile -t $IMAGE_TAG .
+    - docker push $IMAGE_TAG
+    - docker tag $IMAGE_TAG $IMAGE_TAG_SHA
+    - docker push $IMAGE_TAG_SHA
+  except:
+    refs:
+      - master
+
+build-master:
+  stage: build
+  image: docker:latest
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker tag $IMAGE_TAG_SHA $IMAGE_TAG
+    - docker push $IMAGE_TAG
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+  script:
+    - docker stack deploy --compose-file=docker-compose.yml "${CI_PROJECT_NAMESPACE}-${CI_PROJECT_NAME}"
+  only:
+    - master
+  cache:
+    key: pip
+    paths:
+      - pip-cache/
