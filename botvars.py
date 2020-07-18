@@ -627,3 +627,29 @@ GlareImgs = [
     "https://cdn.discordapp.com/attachments/398191639488757770/732429748495712266/image0.gif",
     "https://cdn.discordapp.com/attachments/398191639488757770/732429826329280562/image0.gif",
 ]
+
+InsultTemplates = [
+    'Your face is nice... by shoe standards.',
+    'It\'s not a self-worth issue, you just suck.',
+    'You\'re a three at best. If you dot\'t know, it goes one, two, three...',
+    'Ever considered doing something about that... face?',
+    'At least other dumb people learn to stay quiet.',
+    'You should shower more often.',
+    'Well, maybe not every person has their talents.',
+    'You look like the sort of person who likes Malty.',
+    'Yeah, 80% is totally a passing grade on the IQ scale!',
+    'I\'m uncomfortable sharing 99% of my genome with you.',
+]
+
+ComplimentTemplates = [
+    'For some reason I\'m in a better mood when you\'re around!',
+    'You\'re pretty good at things you\'re passionate about!',
+    'sniff sniff Is that cute I smell?!',
+    'I wish I had more people like you in my life. You\'re awesome!',
+    'You are the unrealistic beauty standard teenagers complain about.',
+    'Beep boop! Awesome person detected!',
+    'You\'re cute when you\'re mad. But absolutely adorable when you\'re not!',
+    'Is it lunchtime, because damn, you\'re a snack!',
+    'Of the 360 000 people born the same day as you, I think you\'re my favorite.',
+    'Looking forward to talking to you makes waking up in the morning a bit more bearable.',
+]

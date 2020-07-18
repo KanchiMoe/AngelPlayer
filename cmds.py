@@ -279,3 +279,13 @@ async def wave(ctx):
     ReqImg = "Wave"
     embed=EmbedMaker(ReqImg)
     await ctx.send(embed=embed)
+
+@mybot.bot.command()
+async def insult(ctx):
+    template = random.choice(botvars.InsultTemplates)
+    await ctx.send(template)
+
+@mybot.bot.command()
+async def compliment(ctx):
+    template = random.choice(botvars.ComplimentTemplates)
+    await ctx.send(template)
