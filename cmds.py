@@ -21,7 +21,7 @@ async def help2(ctx):
 @mybot.bot.command(aliases=['source', 'code'])
 async def sourcecode(ctx):
     embed = discord.Embed(title="The bot's source code", color=0x2ECC71,
-                          description="The source code for this bot is open source and is available on Github.\nhttps://github.com/ChiyoOsaka/AngelPlayer")
+                          description="The source code for this bot is open source and is available on Github.\nhttps://github.com/KanchiMoe/AngelPlayer")
     await ctx.send(embed=embed)
 
 async def command_doer(ctx):
