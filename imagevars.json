@@ -19,7 +19,6 @@
       }
     ]
   },
-      
   "blush": {
     "links": [
       {
@@ -780,6 +779,9 @@
         "link": "https://media.discordapp.net/attachments/769846674725273610/899127010130010182/2d6f6b1b3fd75b7fa7a372bb348d8d9a_1.gif",
         "source": "Not yet provided."
       }
+    ],
+    "allowed_channels": [
+        933114483411386459
     ]
   },
   "hide": {

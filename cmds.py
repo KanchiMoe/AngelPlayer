@@ -26,7 +26,14 @@ async def sourcecode(ctx):
 
 async def command_doer(ctx):
     '''Does the commands'''
-    img = random.choice(COMMANDS[ctx.command.name]['links'])
+    # Check if channel restricted
+    cmd_name = ctx.command.name
+    if 'allowed_channels' in COMMANDS[cmd_name]:
+        if ctx.channel.id not in COMMANDS[cmd_name]['allowed_channels']:
+            await ctx.send('Not allowed in this channel')
+            return
+
+    img = random.choice(COMMANDS[cmd_name]['links'])
     embed_colour = random.randint(0x000000, 0xFFFFFF)
     embed=discord.Embed(color=embed_colour)
     embed.set_image(url=img['link'])
