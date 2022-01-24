@@ -1,4 +1,25 @@
 {
+  "ab": {
+    "links": [
+      {
+        "link": "https://media.discordapp.net/attachments/933083666912014419/935040517266354235/IMG_0760.gif",
+        "source": "Not yet provided."
+      },
+      {
+        "link": "https://media.discordapp.net/attachments/933126301118779463/933596814010105956/tumblr_m8awneEV1X1qh9mnoo1_500.gif",
+        "source": "Not yet provided."
+      },
+      {
+        "link": "https://media.discordapp.net/attachments/933126301118779463/933596386723782676/tumblr_m7zidwd26A1rp123do1_250.gif",
+         "source": "Not yet provided."
+      },
+      {
+        "link": "https://media.discordapp.net/attachments/933126301118779463/933596814010105956/tumblr_m8awneEV1X1qh9mnoo1_500.gif",
+        "source": "Not yet provided."
+      }
+    ]
+  },
+      
   "blush": {
     "links": [
       {
@@ -749,6 +770,14 @@
       },
       {
         "link": "https://cdn.discordapp.com/attachments/399008549491048448/684111230348296320/top.gif",
+        "source": "Not yet provided."
+      }
+    ]
+  },
+  "hentai": {
+    "links": [
+      {
+        "link": "https://media.discordapp.net/attachments/769846674725273610/899127010130010182/2d6f6b1b3fd75b7fa7a372bb348d8d9a_1.gif",
         "source": "Not yet provided."
       }
     ]
