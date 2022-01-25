@@ -42,4 +42,7 @@ async def command_doer(ctx):
 with open('imagevars.json', 'r') as handle:
     COMMANDS = json.load(handle)
 for command in COMMANDS:
-    mybot.bot.command(name=command)(command_doer)
+    if 'aliases' in COMMANDS[command]:
+        mybot.bot.command(name=command, aliases=COMMANDS[command]['aliases'])(command_doer)
+    else:
+        mybot.bot.command(name=command)(command_doer)
