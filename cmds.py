@@ -14,7 +14,7 @@ async def ping(ctx):
 @mybot.bot.command(aliases=['commands', 'command'])
 async def help2(ctx):
     embed=discord.Embed(title="Command list", description="**Here is a list of all the commands:**", color=0x2ECC71)
-    embed.add_field(name="Image commands:", value='\n'.join((f'{mybot.CmdPrefix}{command}' for comand in COMMANDS)), inline=True)
+    embed.add_field(name="Image commands:", value='\n'.join((f'{mybot.CmdPrefix}{command}' for command in COMMANDS)), inline=True)
     embed.add_field(name="Misc. commands", value=f"{mybot.CmdPrefix}help\n{mybot.CmdPrefix}sourcecode", inline=True)
     await ctx.send(embed=embed)
 
