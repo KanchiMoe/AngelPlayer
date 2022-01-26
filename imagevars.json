@@ -614,6 +614,7 @@
     ]
   },
   "goodmorning": {
+    "aliases": ["gm"],
     "links": [
       {
         "link": "https://cdn.discordapp.com/attachments/398191639488757770/729415088884285460/image0.gif",
@@ -1181,6 +1182,7 @@
     ]
   },
   "goodnight": {
+    "aliases": ["gn"],
     "links": [
       {
         "link": "https://cdn.discordapp.com/attachments/433260667437318144/849058226405376000/qWYFfOI.gif",
