@@ -37,6 +37,7 @@ async def command_doer(ctx):
     embed_colour = random.randint(0x000000, 0xFFFFFF)
     embed=discord.Embed(color=embed_colour)
     embed.set_image(url=img['link'])
+    embed.set_footer(text=f"Source: {img['source']}")
     await ctx.send(embed=embed)
 
 with open('imagevars.json', 'r') as handle:
