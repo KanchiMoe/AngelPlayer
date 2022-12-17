@@ -6,9 +6,7 @@ import global_objects as GO
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 
-# Error handling
-
-# For slash commands
+# Error handling for slash commands
 @GO.BOT_CLIENT.tree.error
 async def on_app_command_error(interaction: discord.Interaction, error):
     InvokedBy, InvokedByID = interaction.user, interaction.user.id
@@ -25,7 +23,7 @@ async def on_app_command_error(interaction: discord.Interaction, error):
     #to do
   
 
-# For prefix commands
+# Error handling for prefix commands
 @GO.BOT_CLIENT.event
 async def on_command_error(ctx, error):
     await ctx.reply(error, ephemeral=True)
