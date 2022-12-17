@@ -46,7 +46,7 @@ async def on_command_completion(ctx):
     InvokedBy, InvokedByID = ctx.author, ctx.author.id
     InvokedIn, InvokedInID = ctx.guild, ctx.guild.id
     cmd = ctx.command.name
-    logging.info(f"{InvokedBy} ({InvokedByID}) ran the prefix command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID}).")
+    logging.info((INVOKED_INFO).format(**locals(), **globals()))
 
 def Can_I_Run_Commands_Here(guild_id: int) -> bool:
     if guild_id == 933781308289712178:
