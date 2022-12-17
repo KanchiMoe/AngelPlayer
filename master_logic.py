@@ -57,18 +57,3 @@ def Can_I_Run_Commands_Here(guild_id: int) -> bool:
         return True
     else:
         return False
-
-
-
-
-
-
-
-
-
-# replaced by async def on_command_completion(ctx):
-# def PrefixCommandRanSucess(ctx, cmd) -> None:
-#     InvokedBy, InvokedByID = ctx.author, ctx.author.id
-#     InvokedIn, InvokedInID = ctx.guild, ctx.guild.id
-#     logging.info(f"{InvokedBy} ({InvokedByID}) ran the prefix command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID}).")
-
