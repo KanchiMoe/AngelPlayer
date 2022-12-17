@@ -7,7 +7,7 @@ import global_objects as GO
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 
-INVOKED_INFO = "{InvokedBy} ({InvokedByID}) tried to use the command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID})"
+INVOKED_INFO = "{InvokedBy} ({InvokedByID}) ran to use the command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID})"
 BUT_ERROR = " but encountered an error: {error}"
 
 # Error handling for slash commands
@@ -42,7 +42,7 @@ async def on_command_error(ctx, error):
         for EachMissingPermission in error.missing_permissions:
             BotMissingPermissions.append(EachMissingPermission.capitalize().replace("_", " "))
         
-    await ctx.reply(f":exclamation: Bot requires the following permission(s) to run this command: {', '.join(BotMissingPermissions)}", ephemeral=True)
+        await ctx.reply(f":exclamation: Bot requires the following permission(s) to run this command: {', '.join(BotMissingPermissions)}", ephemeral=True)
 
 
 @GO.BOT_CLIENT.event
