@@ -6,6 +6,9 @@ import global_objects as GO
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
 
+INVOKED_INFO = "{InvokedBy} ({InvokedByID}) tried to use the command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID})"
+BUT_ERROR = " but encountered an error: {error}"
+
 # Error handling for slash commands
 @GO.BOT_CLIENT.tree.error
 async def on_app_command_error(interaction: discord.Interaction, error):
@@ -13,15 +16,15 @@ async def on_app_command_error(interaction: discord.Interaction, error):
     InvokedIn, InvokedInID = interaction.guild, interaction.guild_id
     cmd = interaction.command.name 
 
-    logging.error(f"{InvokedBy} ({InvokedByID}) tried to use the command \"{cmd}\" in \"{InvokedIn}\" ({InvokedInID})")
-    await interaction.response.send_message(error, ephemeral=True)
-    
-    
-    logging.error(error)
+    logging.error((INVOKED_INFO + BUT_ERROR).format(**locals(), **globals()))
 
-    #if isinstance(error, app_commands.BotMissingPermissions):
-    #to do
-  
+    if isinstance(error, app_commands.BotMissingPermissions):
+        #import pdb; pdb.set_trace()
+        BotMissingPermissions = []
+        for EachMissingPermission in error.missing_permissions:
+            BotMissingPermissions.append(EachMissingPermission.capitalize().replace("_", " "))
+
+        await interaction.response.send_message(f":exclamation: Bot requires the following permission(s) to run this command: {', '.join(BotMissingPermissions)}", ephemeral=True) 
 
 # Error handling for prefix commands
 @GO.BOT_CLIENT.event
