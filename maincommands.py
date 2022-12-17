@@ -175,3 +175,8 @@ async def f(ctx):
 @commands.guild_only()
 async def g(ctx):
     await ctx.send("I'm G. I can only be ran in a server and not DMs!")
+
+@GO.BOT_CLIENT.command()
+@commands.bot_has_permissions(administrator=True)
+async def h(ctx):
+    await ctx.send("I'm H. I need administrator perms!")
