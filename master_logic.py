@@ -1,5 +1,6 @@
 import discord
 from discord import app_commands
+from discord.ext import commands
 import logging
 import global_objects as GO
 
@@ -29,16 +30,19 @@ async def on_app_command_error(interaction: discord.Interaction, error):
 # Error handling for prefix commands
 @GO.BOT_CLIENT.event
 async def on_command_error(ctx, error):
-    await ctx.reply(error, ephemeral=True)
-    logging.error(error)
+    InvokedBy, InvokedByID = ctx.author, ctx.author.id
+    InvokedIn, InvokedInID = ctx.guild, ctx.guild.id
+    cmd = ctx.command.name
 
-
-
-
-
-
-
-
+    logging.error((INVOKED_INFO + BUT_ERROR).format(**locals(), **globals()))
+    
+    
+    if isinstance(error, commands.BotMissingPermissions):
+        BotMissingPermissions = []
+        for EachMissingPermission in error.missing_permissions:
+            BotMissingPermissions.append(EachMissingPermission.capitalize().replace("_", " "))
+        
+    await ctx.reply(f":exclamation: Bot requires the following permission(s) to run this command: {', '.join(BotMissingPermissions)}", ephemeral=True)
 
 
 @GO.BOT_CLIENT.event
