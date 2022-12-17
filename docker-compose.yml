@@ -1,7 +1,0 @@
-version: '3.2'
-services:
-  angel-player:
-    image: "${IMAGE_TAG_SHA}"
-    command: python main.py
-    environment:
-      - TOKEN

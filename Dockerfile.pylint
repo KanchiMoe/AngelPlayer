@@ -1,7 +1,0 @@
-ARG IMAGE
-FROM ${IMAGE}
-RUN pip install -i https://devpi.api.home.hi117.moe/root/pypi/+simple/ pylint anybadge
-RUN mkdir pylint
-RUN pylint --output-format=parseable $(find -iname \*.py) | tee pylint.txt || true
-RUN sed -n 's/^Your code has been rated at \([-0-9.]*\)\/.*/\1/p' pylint.txt > score
-RUN anybadge --value=$(printf "%.0f\n" $(cat score)) --file=pylint/pylint.svg --label=pylint 2=red 4=orange 8=yellow 10=green
