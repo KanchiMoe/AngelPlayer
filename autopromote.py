@@ -1,4 +1,5 @@
 import discord
+import os
 
 import global_objects as GO
 
@@ -18,7 +19,9 @@ MSGS = {
     'rolecheck': ":mag: | Checking for AAHQ, Battlefront, Guild and Recruit roles.",
     'rolenotexist': ':x: | Role "{role_name}" does not exist.',
     'roleexists': ':white_check_mark: | Role "{role_name}" exists.',
-    'createrole': ' Please double check the role ID used in the code. ID: `{role_id}`'
+    'createrole': ' Please double check the role ID used in the code. ID: `{role_id}`',
+    'fileexists': ':white_check_mark: | {each}.txt exists.',
+    'filedoesntexist': ":x: | {each}.txt doesn't exist. Autopromotion can't continue without this file."
 }
 
 @GO.BOT_CLIENT.tree.command(name="apwip",description="Promote users in Angel Beats! based on the most recent promotion data.")
@@ -31,6 +34,7 @@ async def apwip(interaction: discord.Interaction, log_channel_id: str):
     await log_channel.send(f"{MSGS['rolecheck']}".format(**locals(), **globals()))
 
     await CheckRolesExist(log_channel)
+    await CheckFilesExist(log_channel)
 
 # Doing this cause https://github.com/Rapptz/discord.py/issues/9147
 async def GetLogChannelObj(interaction: discord.Interaction, log_channel_id: str):
@@ -47,7 +51,17 @@ async def CheckRolesExist(log_channel) -> None:
         role = guild.get_role(role_id)
         if role is None:
             await log_channel.send(f"{MSGS['rolenotexist'] + MSGS['createrole']}".format(**locals(), **globals()))
-            raise ValueError("foo2")
+            raise ValueError("role doesn't exist")
         else:
             await log_channel.send(f"{MSGS['roleexists']}".format(**locals(), **globals()))
 
+async def CheckFilesExist(log_channel) -> None:
+    FileList = ["aahq", "bf", "guild"]
+
+    for each in FileList:
+        if os.path.exists(f"./{each}.txt"):
+            await log_channel.send(f"{MSGS['fileexists']}".format(**locals(), **globals()))
+        else:
+            await log_channel.send(f"{MSGS['filedoesntexist']}".format(**locals(), **globals()))
+            raise ValueError("file doesn't exist")
+            # to do, autocreate file
