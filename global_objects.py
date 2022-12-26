@@ -1,7 +1,11 @@
 import discord
 from discord.ext import commands
+import os
+from dotenv import load_dotenv
 
-DISCORD_BOT_TOKEN = "" # os.environ['DISCORD_BOT_TOKEN']
+load_dotenv()
+
+DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
 
 BOT_DESC = '''An example bot to showcase the discord.ext.commands extension
 module.
