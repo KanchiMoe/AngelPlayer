@@ -4,6 +4,7 @@ import os
 import global_objects as GO
 
 AB_SERVER_ID = 933083666912014416
+AB_ATEVERYONE = 933083666912014416
 FILE_PATH = "./modules/autopromote/"
 
 ROLES = {
@@ -43,7 +44,11 @@ MSGS = {
     'createrole': ' Please double check the role ID used in the code. ID: `{role_id}`',
     'fileexists': ':white_check_mark: | {each}.txt exists.',
     'filedoesntexist': ":x: | {each}.txt doesn't exist. Autopromotion can't continue without this file.",
-    'fileckeck': ":mag: | Checking for data files."
+    'fileckeck': ":mag: | Checking for data files.",
+    'doublerolecheck': ":mag: | Checking for double roles. (eg: AAHQ and Battlefront, or Battlefront and Guild, etc.)",
+    'nodoublecheckerrors': ":white_check_mark: | Everyone in the server only has 1 role (AAHQ or Battlefront or Guild or Recruit).",
+    'doublecheckerrors': ":no_entry: | Members with more than 1 promotable role have been detected. These must be fixed before Autopromotions can continue.",
+    'aaa': ":warning: | {each_member} (<@{each_member.id}>) has more than 1 promotable role: {', '.join(ListOfDoubleRoles)}."
 }
 
 @GO.BOT_CLIENT.tree.command(name="apwip",description="Promote users in Angel Beats! based on the most recent promotion data.")
@@ -61,7 +66,8 @@ async def apwip(interaction: discord.Interaction, log_channel_id: str):
     GetNewRoleUserIds()
     await LogUserContents(log_channel)
 
-
+    await log_channel.send(f"{MSGS['doublerolecheck']}".format(**locals(), **globals()))
+    await CheckUsersForDoubleRoles(log_channel)
 
 #
 #   Spacing just for clarity while working
@@ -101,7 +107,7 @@ async def CheckFilesExist(log_channel) -> None:
             raise ValueError("file doesn't exist")
             # to do, autocreate file
 
-def GetNewRoleUserIds():
+def GetNewRoleUserIds() -> None:
     for each_role in ROLES:
         if each_role == "Recruit":
             continue
@@ -111,7 +117,7 @@ def GetNewRoleUserIds():
                     int(each_line) for each_line in contents.read().split('\n') if each_line
                 }
 
-async def LogUserContents(log_channel):
+async def LogUserContents(log_channel) -> None:
     for each_role in ROLES:
         if each_role == "Recruit":
             continue
@@ -121,3 +127,77 @@ async def LogUserContents(log_channel):
                 # to do, add print statment
             else:
                 await log_channel.send(f":printer: | {ROLES[each_role]['short_name']}.txt has content. Printing this to the console.")
+
+async def CheckUsersForDoubleRoles(log_channel):
+    guild = GO.BOT_CLIENT.get_guild(AB_SERVER_ID)
+    autopromote_roles = set()
+
+    for each_role in ROLES:
+        autopromote_roles.add(ROLES[each_role]['role_id'])
+
+    # Get all of a members roles
+    for each_member in guild.members:
+        members_roles_ids = set()
+        for each_role in each_member.roles:
+            members_roles_ids.add(each_role.id)
+            
+        # Remove @everyone from the list
+        members_roles_ids.remove(AB_ATEVERYONE)
+
+        check_output_ids = members_roles_ids.intersection(autopromote_roles)
+        if len(check_output_ids) > 1:
+            DoubleRoleCheckErrors = 1
+            ListOfDoubleRoles = [ ]
+
+            for each_role in check_output_ids:
+                role_ids = guild.get_role(each_role)
+                role_names = role_ids.name
+                ListOfDoubleRoles.append(role_names)
+            await log_channel.send(f":warning: | {each_member} (<@{each_member.id}>) has more than 1 promotable role: {', '.join(ListOfDoubleRoles)}.")
+     
+    if DoubleRoleCheckErrors > 0:
+        await log_channel.send(f"{MSGS['doublecheckerrors']}".format(**locals(), **globals()))
+        raise ValueError("foo")
+    else:
+        await log_channel.send(f"{MSGS['nodoublecheckerrors']}".format(**locals(), **globals()))
+
+
+
+        # if DoubleRoleCheckErrors > 0:
+        #     
+        # else:
+        #     await log_channel.send(f"{MSGS['nodoublecheckerrors']}".format(**locals(), **globals()))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    #for each_role in ROLES
+
+    # for each_member in guild.members:
+    #     for each_role in each_member.roles:
+    #         if each_role.id == 933085846549200897:
+    #             print(f"{each_member}")
+
+
+# guild = GO.BOT_CLIENT.get_guild(AB_SERVER_ID)
+
+
+
+
+
+
+
+#[<Role id=933083666912014416 name='@everyone'>, <Role id=933187568944685076 name='Battlefront Member'>, <Role id=933120465592016928 name='Server Booster'>, <Role id=935594354918187099 name='Translator-kun'>, <Role id=933149343752544306 name='Kanade'>, <Role id=933085846549200897 name='Student Council'>, <Role id=935297556223762493 name='Faculty committee (a)'>, <Role id=935299833370144828 name='Acting President'>]
