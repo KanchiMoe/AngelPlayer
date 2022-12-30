@@ -2,6 +2,7 @@ import logging
 import discord
 import global_objects as GO
 import maincommands
+import autopromote
 
 LOG_FORMAT = '%(asctime)s - %(levelname)s - %(message)s'
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT)
